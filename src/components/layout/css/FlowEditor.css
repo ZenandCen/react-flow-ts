@@ -1,0 +1,128 @@
+/* Trong src/components/layout/css/FlowEditor.css */
+@import '../../../styles/variables.css';
+
+.flow-editor-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+aside {
+    width: 200px;
+    padding: var(--spacing-md);
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-sm);
+    z-index: 20;
+}
+
+aside h3 {
+    text-align: center;
+    color: var(--text-color-default);
+    margin-top: 0;
+    margin-bottom: var(--spacing-lg);
+}
+
+.reactflow-wrapper {
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+}
+
+.flow-controls-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.flow-actions-group {
+    display: flex;
+    gap: 10px;
+}
+
+.flow-actions-group button {
+    padding: 8px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #343a40;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    font-weight: 500;
+}
+
+.flow-actions-group button:hover:not(:disabled) {
+    border-color: #007bff;
+    background-color: #e9ecef;
+    color: #007bff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.flow-actions-group button:active:not(:disabled) {
+    background-color: #dee2e6;
+    border-color: #0056b3;
+    transform: translateY(0);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.flow-actions-group button:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+    opacity: 0.7;
+    box-shadow: none;
+}
+
+.flow-actions-group .run-button {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.flow-actions-group .run-button:hover:not(:disabled) {
+    background-color: #218838;
+    border-color: #1e7e34;
+    color: white;
+}
+
+.flow-actions-group .stoploop-button {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+.flow-actions-group .stoploop-button:hover:not(:disabled) {
+    background-color: #c82333;
+    border-color: #bd2130;
+    color: white;
+}
+
+.flow-controls-bar h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #34495e;
+    margin-left: 20px;
+}
+
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}

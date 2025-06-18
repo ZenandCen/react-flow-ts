@@ -1,0 +1,14 @@
+:root {
+  /* ... các biến khác ... */
+  --sidebar-width-open: 200px;
+  --sidebar-width-closed: 40px;
+  /* Chiều rộng cho nút show sidebar */
+  --transition-speed: 0.3s;
+  /* Tốc độ chuyển động */
+  --button-toggle-width: 40px;
+  /* Kích thước nút toggle */
+  --handle-color-target: #409eff;
+  /* Màu xanh dương */
+  --handle-color-target-hover: #3a8ee6;
+  /* Một màu xanh dương đậm hơn một chút */
+}
